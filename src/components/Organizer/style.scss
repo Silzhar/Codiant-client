@@ -1,0 +1,86 @@
+.Organizer{
+    font-family: 'Poppins';
+    margin-top: 40px;
+    margin-bottom: 40px;
+    @media (min-width: 900px) {
+        max-width: 900px;
+        margin: 40px auto;
+        display:flex;
+        }
+
+    &__card{
+        // width: 300px;
+        padding: 0px 50px 30px 50px;
+        border: 1px solid #00000014;
+        margin: 3px;
+        border-radius: 4px;
+        background-color: white;
+        @media (min-width: 900px) {
+            margin: 3px 40px 40px 40px;
+        }
+    }
+
+    &__div{
+        // display: flex;
+        position:relative;
+    }
+    &__title{
+        font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    @media (max-width: 600px) {
+            font-size: 48px;
+        }
+
+
+    }
+
+    &__subtitle{
+        font-weight: 600;
+    font-size: 22px;
+    }
+    &__{
+        font-size: 18px;
+    }
+
+    &__button{
+        width: 100%;
+        padding: 10px;
+        font-size: 22px;
+        color: white;
+        border: none;
+        letter-spacing: 2px;
+        border-radius: 4px;
+        background-color: black;
+        cursor:pointer;
+        
+    }
+
+
+}
+
+.cont{
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-top: 8px;
+}
+
+$primary-color: black ;
+@import 'loaders.css/src/animations/pacman.scss';
+
+.loader-hidden {
+  display: none;
+}
+.loader-active {
+  display: block;
+}
+
+.myloader{
+    background-color: white;
+    margin: 0 auto;
+    max-width: 92px;
+    padding: 298px;
+}
+
+.grow { transition: all .2s ease-in-out;}
+.grow:hover { transform: scale(1.05); }

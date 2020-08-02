@@ -1,0 +1,1 @@
+export { JsGame } from './JsGame'

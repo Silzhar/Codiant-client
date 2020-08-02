@@ -1,0 +1,43 @@
+.Homepage{
+    @media (max-width: 500px) {
+    padding: 0px 15px 0px 15px;
+}
+    
+    @media (min-width: 900px) {
+        max-width: 900px;
+        margin: 170px auto;
+        }
+    &__h1{
+        font-family: 'Poppins';
+        font-size: 60px;
+        padding-bottom:30px;
+    }
+
+    &__subtitle{
+        font-family: 'Poppins';
+        font-size: 31px;
+    }
+
+    &__img {
+        max-width: 4.6rem;
+    }
+    &__link{
+        background-color: black;
+        padding: 5px;
+        text-align: center;
+        width: 400px;
+        border-radius: 4px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        @media (max-width: 500px) {
+            width:97%;
+        }
+    }
+    &__link > a{
+        text-decoration: none;
+        font-family: 'Poppins';
+        color: white;
+        font-size:25px;
+        letter-spacing: 2px;
+    }
+}

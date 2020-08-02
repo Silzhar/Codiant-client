@@ -1,0 +1,49 @@
+.Footer{
+
+    background-color: black;
+    font-family: 'Poppins';
+    color: white;
+    
+    &__title{
+        font-size: 23px;
+    font-weight: 800;
+    }
+
+    &__container{
+        @media (min-width: 900px) {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 16px;
+            display: flex;
+            } 
+        @media (max-width: 899px) {
+                width: 100%;
+                padding: 16px;
+                display: block;
+                } 
+    }
+
+    &__last{
+        text-align: center;
+    }
+    &__list{
+        list-style-type: none;
+        padding:0px;
+    }
+
+    &__list > li {
+        padding-right: 10px;;
+    }
+
+    &__cell{
+        margin: 20px;
+        @media (min-width: 900px){
+            width: 33%;
+        }
+        @media (max-width: 60px){
+            width: 100%;
+        }
+    }
+
+
+}

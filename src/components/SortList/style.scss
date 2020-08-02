@@ -1,0 +1,128 @@
+// * {
+//     box-sizing: border-box;
+//   }
+  
+//   html,
+//   body {
+//     margin: 0;
+//     padding: 0;
+//     height: 100%;
+//     width: 100%;
+//     overflow: hidden;
+//     user-select: none;
+//     font-family: 'Raleway', sans-serif;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background: #f0f0f0;
+//     cursor: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png') 39 39,
+//       auto;
+//   }
+  
+  .draggable-main {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    user-select: none;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f0f0;
+    padding-left: 20px;
+  }
+  
+  .content {
+    position: relative;
+    width: 450px;
+    // height: 240px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    @media (min-width: 900px) {
+        max-width: 900px;
+        margin: 0 auto;
+        }
+  }
+  
+  .content > div {
+
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    overflow: visible;
+    pointer-events: auto;
+    transform-origin: 50% 50% 0px;
+    border-radius: 5px;
+    color: black;
+    line-height: 35px;
+    padding-left: 32px;
+    font-size: 14.5px;
+    background: lightblue;
+    // text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+    .content > div {
+    //background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    background: linear-gradient(135deg, #d0ffba 0%, #ebff65 100%);
+  }
+
+  @media (max-width: 600px) {
+    .content > div {
+      width: 67%;
+      margin-left: 19px;
+    }
+  }
+
+
+  .titulo{
+    font-size: 18px;
+    font-weight: 500;
+    @media (max-width: 600px) {
+      padding-left: 21px;
+    font-size: 15px;}
+
+  }
+  // .content > div:nth-child(1) {
+  //   background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  // }
+  // .content > div:nth-child(2) {
+  //   background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  // }
+  // .content > div:nth-child(3) {
+  //   background: linear-gradient(135deg, #5ee7df 0%, #b490ca 100%);
+  // }
+  // .content > div:nth-child(4) {
+  //   background: linear-gradient(135deg, #c3cfe2 0%, #c3cfe2 100%);
+  // }
+  
+  .SortList{
+    @media (min-width: 900px) {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      }
+    &__buttondiv{
+      // padding: 40px;
+      // width: 450px;
+      width: 450px;
+    margin: 60px auto;
+    @media (max-width: 600px) {
+      width: 87%;
+    }
+    }
+    &__button{
+      margin: 5px 5px 5px 19px;
+      padding: 10px;
+      width: 100%;
+      font-size: 22px;
+      color: white;
+      border: none;
+      letter-spacing: 2px;
+      border-radius: 4px;
+      background-color: black;
+      @media (max-width: 600px) {
+      margin: 5px 5px 5px 0px;}
+    }
+  }

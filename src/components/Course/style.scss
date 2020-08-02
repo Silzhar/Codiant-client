@@ -1,0 +1,46 @@
+.Course{
+    font-family: 'Poppins';
+    margin-top: 40px;
+    margin-bottom: 40px;
+    @media (min-width: 900px) {
+        max-width: 900px;
+        margin: 0 auto;
+        }
+    &__container{
+        // display: inline-grid;
+        // width: 400px;
+        text-align: center;
+        margin: 30px auto;
+        max-width: 150px;
+        // margin:20px;
+        @media (max-width: 600px) {
+            width: 100%;
+            margin: 0 auto;
+            }
+    }
+    &__container > a{
+        text-decoration: none;
+    font-size: 23px;
+    color: black;
+    text-align: center;
+    font-weight: 800;
+    }
+    &__all{
+        // display: flex;
+    }
+    &__image{
+        width: 150px;
+        height: auto;
+    }
+
+    &__h1{
+        font-size: 47px;
+        @media (max-width: 600px) {
+            font-size: 35px;
+            padding-left:23px;
+        }
+    }
+}
+
+.grow { transition: all .2s ease-in-out;}
+.grow:hover { transform: scale(1.1); }
